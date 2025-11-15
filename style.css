@@ -83,18 +83,20 @@ section.home{
 	background-color: var(--primary-light-clr);
 }
 .home .main-navbar{
-	position: absolute;
+	position: fixed;
+	top: 0;
+	left: 0;
 	width: 100%;
-	max-width: 1400px;
-	height: 12vh;
-	max-height: 80px;
-	background-color: var(--primary-clr);
 	padding: 0px 8%;
-	margin: 0px auto;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	height: 12vh;
+	max-height: 80px;
+	background-color: var(--primary-clr);
 	z-index: 100;
+	box-shadow: 0px 2px 10px rgba(0,0,0,0.25);
+	margin: 0;
 }
 .home.active .main-navbar{
 	position: fixed;
@@ -196,7 +198,7 @@ section.home{
 .home .banner{
 	width: 100%;
 	min-height: 100vh;
-	padding: 100px 8% 70px;
+	padding: 100px 4% 70px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
